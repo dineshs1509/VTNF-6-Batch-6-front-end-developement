@@ -1,0 +1,716 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*fonts start*/
+@font-face {
+  font-family: "Alexandria";
+  src: url("../fonts/Alexandria-Regular.eot");
+  src: url("../fonts/Alexandria-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Alexandria-Regular.woff2") format("woff2"), url("../fonts/Alexandria-Regular.woff") format("woff"), url("../fonts/Alexandria-Regular.ttf") format("truetype"), url("../fonts/Alexandria-Regular.svg#Alexandria-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Alexandria";
+  src: url("../fonts/Alexandria-Bold.eot");
+  src: url("../fonts/Alexandria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Alexandria-Bold.woff2") format("woff2"), url("../fonts/Alexandria-Bold.woff") format("woff"), url("../fonts/Alexandria-Bold.ttf") format("truetype"), url("../fonts/Alexandria-Bold.svg#Alexandria-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/*fonts end*/
+/*root start*/
+/*root end*/
+/*root start*/
+body {
+  font-family: "Alexandria";
+  color: #6e6f76;
+}
+
+/*common start*/
+.widthcontainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .widthcontainer {
+    width: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #313036;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a i {
+  margin-left: 7px;
+}
+
+.commonheading {
+  color: #313036;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 60px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .commonheading {
+    font-size: 35px;
+    margin: 20px 0px;
+  }
+}
+.commonheading span {
+  display: block;
+  color: #307eea;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.fclear {
+  clear: both;
+}
+
+.btnctr {
+  text-align: center;
+  margin: 60px 0;
+}
+.btnctr a {
+  padding: 15px 60px;
+  border-radius: 7px;
+  border: 1px solid #307eea;
+  color: #313036;
+  text-transform: capitalize;
+}
+.btnctr a:hover {
+  background-color: #307eea;
+  color: #ffffff;
+}
+
+/*common end*/
+/*navbar strat*/
+.navmain {
+  background-color: #ffffff;
+  padding: 25px 0;
+}
+.navmain .widthcontainer .floatnav {
+  float: left;
+  width: 11%;
+  padding: 10px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav {
+    width: 50%;
+    padding: 10px 15px;
+    float: none;
+  }
+}
+.navmain .widthcontainer .floatnav .simgleft {
+  float: left;
+  width: 35%;
+  vertical-align: middle;
+}
+.navmain .widthcontainer .floatnav .simgleft a {
+  margin-top: -6px;
+}
+.navmain .widthcontainer .floatnav .simgright {
+  float: left;
+  width: 65%;
+}
+.navmain .widthcontainer .floatnav .simgright a {
+  font-size: 19px;
+  font-weight: bold;
+  color: #313036;
+  transition: 1s;
+  display: inline-block;
+}
+.navmain .widthcontainer .floatnav .simgright a:hover {
+  color: #307eea;
+  transition: 2s;
+  transform: scale(1.1);
+}
+.navmain .widthcontainer .floatnav2 {
+  float: right;
+  margin-top: 14px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav2 {
+    float: none;
+  }
+}
+.navmain .widthcontainer .floatnav2 ul li {
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav2 ul li {
+    display: block;
+    padding: 10px 0;
+  }
+}
+.navmain .widthcontainer .floatnav2 ul li a {
+  color: #313036;
+  margin: 0px 28px 0px 28px;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.navmain .widthcontainer .floatnav2 ul li a:hover {
+  color: #307eea;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav2 ul li a {
+    display: block;
+    margin: 0px 20px;
+  }
+}
+
+/*nav end*/
+/*banner start*/
+.bannermain {
+  background: url(../images/NewProject.jpg) no-repeat 0 0/100%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain {
+    background: url(../images/NewProject.jpg) no-repeat 0 0/100% 100%;
+  }
+}
+.bannermain .bannerwidth {
+  width: 400px;
+  margin-left: 120px;
+  padding: 145px 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth {
+    width: 100%;
+    padding: 45px 0;
+    margin-left: 0px;
+  }
+}
+.bannermain .bannerwidth h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 55px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth h1 {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 15px;
+  }
+}
+.bannermain .bannerwidth p {
+  margin: 50px 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth p {
+    margin: 30px 15px;
+  }
+}
+.bannermain .bannerwidth a {
+  border: 1px solid #313036;
+  padding: 13px 30px;
+  margin-right: 15px;
+  border-radius: 7px;
+  color: #313036;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.bannermain .bannerwidth a:hover {
+  color: #ffffff;
+  border: 1px solid #307eea;
+  background-color: #307eea;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth a {
+    padding: 13px 15px;
+    margin: 0 15px;
+    color: #ffffff;
+    background-color: #307eea;
+  }
+}
+
+/*banner end*/
+/*services start*/
+.servicesmain .widthcontainer .servicefloat .sfloat {
+  float: left;
+  width: 326px;
+  border: 1px solid #c5c5c6;
+  padding: 20px 20px 30px;
+  margin: 0 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .servicesmain .widthcontainer .servicefloat .sfloat {
+    width: 82%;
+    float: none;
+    padding: 20px 15px;
+    margin: 20px 15px;
+  }
+}
+.servicesmain .widthcontainer .servicefloat .sfloat span {
+  display: inline-block;
+  padding: 30px 34px;
+  background-color: #307eea;
+  border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+.servicesmain .widthcontainer .servicefloat .sfloat span i {
+  color: #ffffff;
+  font-size: 50px;
+}
+.servicesmain .widthcontainer .servicefloat .sfloat h3 {
+  font-size: 25px;
+  margin: 16px 0;
+}
+
+/*services end*/
+/*chooseus start*/
+.chooseusmain {
+  background-color: #f0f3f8;
+  padding-top: 30px;
+}
+.chooseusmain .chooseusfloat .cfloat {
+  float: left;
+  width: 262px;
+  margin: 25px 0px 35px 128px;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .chooseusmain .chooseusfloat .cfloat {
+    float: none;
+    width: 68%;
+    margin: 25px 0px 35px 100px;
+  }
+}
+.chooseusmain .chooseusfloat .cfloat h4 {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -81px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .chooseusmain .chooseusfloat .cfloat h4 {
+    left: -80px;
+  }
+}
+.chooseusmain .chooseusfloat .cfloat h4 span {
+  color: #307eea;
+  font-size: 20px;
+}
+.chooseusmain .chooseusfloat .cfloat h3 {
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+/*chooseus end*/
+/*number start*/
+.numbermain .numberfloat {
+  padding: 105px 0 10px 300px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat {
+    padding: 45px 15px;
+  }
+}
+.numbermain .numberfloat .lfloat {
+  margin-top: 30px;
+  float: left;
+  width: 50%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .lfloat {
+    float: none;
+    width: 100%;
+  }
+}
+.numbermain .numberfloat .lfloat .radius {
+  height: 320px;
+  width: 320px;
+  border: 1px solid #c5c5c6;
+  border-radius: 100%;
+  box-shadow: 9px 20px 45px #adb4ca;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .lfloat .radius {
+    height: 220px;
+    width: 220px;
+  }
+}
+.numbermain .numberfloat .lfloat .radius h2 {
+  font-size: 26px;
+  margin: 35px 30px;
+  text-align: center;
+}
+.numbermain .numberfloat .lfloat .radius h2 span {
+  font-size: 140px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: block;
+  color: #307eea;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .lfloat .radius h2 span {
+    font-size: 60px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .lfloat .radius h2 {
+    font-size: 22px;
+  }
+}
+.numbermain .numberfloat .lfloat .radius .bigcircle {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: #307eea;
+  position: absolute;
+  top: -30px;
+  right: -73px;
+}
+.numbermain .numberfloat .lfloat .radius .smallcircle {
+  display: inline-block;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  background-color: #307eea;
+  position: absolute;
+  top: 76px;
+  right: -77px;
+}
+.numbermain .numberfloat .rfloat {
+  float: left;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .rfloat {
+    float: none;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+.numbermain .numberfloat .rfloat h2 {
+  font-size: 24px;
+  margin: 0px 50px 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .rfloat h2 {
+    font-size: 22px;
+  }
+}
+.numbermain .numberfloat .rfloat h2 span {
+  display: block;
+  color: #307eea;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .numbermain .numberfloat .rfloat h2 span {
+    font-size: 30px;
+  }
+}
+
+/*number end*/
+/*meetteam start*/
+.meetteammain .meetteamfloat {
+  padding: 0px 0 80px 0;
+}
+.meetteammain .meetteamfloat .mfloat {
+  float: left;
+  width: 265px;
+  border: 1px solid #c5c5c6;
+  border-radius: 12px;
+  text-align: center;
+  padding-bottom: 15px;
+  margin: 0 15px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .meetteammain .meetteamfloat .mfloat {
+    float: none;
+    width: 90%;
+    margin: 30px 15px;
+  }
+}
+.meetteammain .meetteamfloat .mfloat img {
+  width: 100%;
+  height: 270px;
+  display: inline-block;
+  border-radius: 12px 12px 0px 0px;
+}
+.meetteammain .meetteamfloat .mfloat h3 {
+  margin: 15px 0 10px;
+}
+.meetteammain .meetteamfloat .mfloat p {
+  font-size: 16px;
+}
+
+/*meetteam end*/
+/*latestnews start*/
+.latestnewsmain {
+  background-color: #f0f3f8;
+  padding: 1px 0 10px;
+}
+.latestnewsmain .latestfloat .lafloat {
+  float: left;
+  width: 365px;
+  border: 1px solid #c5c5c6;
+  border-radius: 12px;
+  margin: 0 15px;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .latestnewsmain .latestfloat .lafloat {
+    float: none;
+    width: 90%;
+    margin: 30px 15px;
+  }
+}
+.latestnewsmain .latestfloat .lafloat img {
+  width: 100%;
+  height: 270px;
+  display: inline-block;
+  border-radius: 12px 12px 0px 0px;
+}
+.latestnewsmain .latestfloat .lafloat a {
+  padding: 10px 13px;
+  background-color: #307eea;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 5px;
+  position: absolute;
+  top: 61%;
+  left: 37%;
+}
+.latestnewsmain .latestfloat .lafloat .flheadpara {
+  padding: 15px 20px 20px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 12px 12px;
+}
+.latestnewsmain .latestfloat .lafloat .flheadpara h3 {
+  margin: 15px 0 10px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .latestnewsmain .latestfloat .lafloat .flheadpara h3 {
+    font-size: 17px;
+  }
+}
+.latestnewsmain .latestfloat .lafloat .flheadpara p {
+  font-size: 14px;
+}
+
+/*latestnews end*/
+/*footermain start*/
+.footermain {
+  padding: 90px 0px 75px;
+  background-color: #313036;
+  color: #c5c5c6;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain {
+    padding: 20px 0px 45px;
+  }
+}
+.footermain .footerfloat h3 {
+  color: #c5c5c6;
+  margin: 0px 0 15px;
+  font-size: 20px;
+}
+.footermain .footerfloat h3 a {
+  color: #ffffff;
+  transition: 2s;
+}
+.footermain .footerfloat h3 a:hover {
+  color: #307eea;
+  transition: 2s;
+  transform: rotateX(360deg);
+}
+.footermain .footerfloat ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain .footerfloat ul li {
+    line-height: 25px;
+  }
+}
+.footermain .footerfloat ul li a {
+  color: #c5c5c6;
+}
+.footermain .footerfloat ul li:hover a {
+  color: #307eea;
+}
+.footermain .footerfloat .pathft {
+  float: left;
+  width: 275px;
+  margin-right: 120px;
+  text-align: justify;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain .footerfloat .pathft {
+    float: none;
+    width: 88%;
+    padding: 30px 15px;
+  }
+}
+.footermain .footerfloat .pathft h3 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 0 20px;
+}
+.footermain .footerfloat .pathft a {
+  display: inline-block;
+  margin-right: 5px;
+}
+.footermain .footerfloat .pathft .icon {
+  margin-top: 60px;
+}
+.footermain .footerfloat .pathft .icon a {
+  color: #ffffff;
+  border: 1px solid #c5c5c6;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-align: center;
+}
+.footermain .footerfloat .pathft .icon a i {
+  margin: 0;
+}
+.footermain .footerfloat .pathft .icon a:hover {
+  color: #307eea;
+  border: 1px solid #307eea;
+}
+.footermain .footerfloat .menuft {
+  float: left;
+  width: 200px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain .footerfloat .menuft {
+    float: none;
+    width: 88%;
+    padding: 30px 15px;
+  }
+}
+.footermain .footerfloat .contactft {
+  float: left;
+  width: 350px;
+  margin-left: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain .footerfloat .contactft {
+    float: none;
+    width: 88%;
+    padding: 30px 15px;
+    margin: 0;
+  }
+}
+.footermain .footerfloat .contactft i {
+  margin-right: 10px;
+}
+.footermain .footerfloat .contactft .sub h3 {
+  margin: 30px 0 20px;
+}
+.footermain .footerfloat .contactft .sub span {
+  color: #c5c5c6;
+  padding: 15px 10px;
+  border: 1px solid #c5c5c6;
+  border-radius: 5px;
+  display: inline-block;
+  width: 170px;
+  font-size: 14px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain .footerfloat .contactft .sub span {
+    width: 138px;
+  }
+}
+.footermain .footerfloat .contactft .sub a {
+  border-radius: 5px;
+  padding: 14px 30px;
+  margin-left: 10px;
+  border: 1px solid #307eea;
+  color: #c5c5c6;
+}
+.footermain .footerfloat .contactft .sub a:hover {
+  background-color: #307eea;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footermain .footerfloat .contactft .sub a {
+    padding: 14px 20px;
+  }
+}
+
+/*fotermain end*/
+/*fotersec start*/
+.footersecmain {
+  background-color: #313036;
+  border-top: 1px solid #c5c5c6;
+  padding: 40px 0;
+}
+.footersecmain .footersecfloat .fslfloat {
+  float: left;
+  width: 50%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footersecmain .footersecfloat .fslfloat {
+    float: none;
+    width: 93%;
+    margin: 15px;
+  }
+}
+.footersecmain .footersecfloat .fslfloat a {
+  margin-right: 15px;
+  color: #c5c5c6;
+  padding: 10px 0;
+  border-bottom: 3px dotted #c5c5c6;
+  font-size: 14px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footersecmain .footersecfloat .fslfloat a {
+    font-size: 12px;
+  }
+}
+.footersecmain .footersecfloat .fslfloat a:hover {
+  color: #307eea;
+  border-bottom: 3px dotted #307eea;
+}
+.footersecmain .footersecfloat .fsrfloat {
+  float: left;
+  text-align: right;
+  padding: 10px 0;
+  width: 50%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footersecmain .footersecfloat .fsrfloat {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+.footersecmain .footersecfloat .fsrfloat a {
+  display: inline-block;
+  color: #c5c5c6;
+  font-size: 14px;
+}
+.footersecmain .footersecfloat .fsrfloat a:hover {
+  color: #307eea;
+}
+
+/*fotersec end*//*# sourceMappingURL=style.css.map */
