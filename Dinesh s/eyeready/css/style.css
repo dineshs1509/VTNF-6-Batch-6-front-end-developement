@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*fonts start*/
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Black.eot");
+  src: url("../fonts/Rubik-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik-Black.woff") format("woff"), url("../fonts/Rubik-Black.ttf") format("truetype"), url("../fonts/Rubik-Black.svg#Rubik-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.eot");
+  src: url("../fonts/Rubik-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype"), url("../fonts/Rubik-Medium.svg#Rubik-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Light.eot");
+  src: url("../fonts/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff"), url("../fonts/Rubik-Light.ttf") format("truetype"), url("../fonts/Rubik-Light.svg#Rubik-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Bold.eot");
+  src: url("../fonts/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.ttf") format("truetype"), url("../fonts/Rubik-Bold.svg#Rubik-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.eot");
+  src: url("../fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype"), url("../fonts/Rubik-Regular.svg#Rubik-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-ExtraBold.eot");
+  src: url("../fonts/Rubik-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-ExtraBold.woff2") format("woff2"), url("../fonts/Rubik-ExtraBold.woff") format("woff"), url("../fonts/Rubik-ExtraBold.ttf") format("truetype"), url("../fonts/Rubik-ExtraBold.svg#Rubik-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-SemiBold.eot");
+  src: url("../fonts/Rubik-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff"), url("../fonts/Rubik-SemiBold.ttf") format("truetype"), url("../fonts/Rubik-SemiBold.svg#Rubik-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/*fonts end*/
+/*root start*/
+/*root end*/
+/*root start*/
+body {
+  font-family: "Rubik";
+  font-weight: normal;
+  font-size: 18px;
+  color: #c9bdb1;
+}
+
+/*common start*/
+.widthcontainer {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .widthcontainer {
+    width: 100%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #213162;
+}
+
+.btn {
+  padding: 17px 60px;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 38px;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: #213162;
+}
+.btn:hover {
+  background-color: #02c18d;
+}
+
+.heading {
+  color: #213162;
+  font-size: 35px;
+  line-height: 65px;
+}
+.heading span {
+  display: block;
+  line-height: 22px;
+}
+.heading span a {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #02c18d;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .heading {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 55px 0;
+  }
+}
+
+p {
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.fclear {
+  clear: both;
+}
+
+ul li {
+  list-style: none;
+}
+
+.linemain {
+  text-align: center;
+  padding: 3px 0;
+}
+.linemain .line {
+  width: 40px;
+  border: 3px solid #02c18d;
+  display: inline-block;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+.linemain .minwidth {
+  width: 25px;
+  margin-right: 0px;
+}
+.linemain .linemar {
+  margin-left: -7px;
+}
+.linemain .circle {
+  border-radius: 100px;
+  border: 7px solid #02c18d;
+  display: inline-block;
+  margin: 0px 0px 0 -6px;
+}
+.linemain .circleryt {
+  margin: 0px -6px 0 -6px;
+}
+
+i {
+  color: #02c18d;
+}
+i:hover {
+  color: #213162;
+}
+
+/*common end*/
+/*navbar strat*/
+.navmain {
+  padding: 25px 0 20px;
+  background-color: #02c18d;
+}
+.navmain .widthcontainer .floatnav {
+  float: left;
+  width: 25%;
+  padding: 10px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav {
+    float: none;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+.navmain .widthcontainer .floatnav2 {
+  float: right;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav2 {
+    float: none;
+  }
+}
+.navmain .widthcontainer .floatnav2 ul {
+  margin-top: 21px;
+}
+.navmain .widthcontainer .floatnav2 ul span {
+  margin-left: 10px;
+}
+.navmain .widthcontainer .floatnav2 ul span a {
+  border: 1px solid #02c18d;
+  padding: 15px 35px;
+  font-size: 17px;
+}
+.navmain .widthcontainer .floatnav2 ul li {
+  display: inline-block;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav2 ul li {
+    display: block;
+    padding: 10px 0;
+  }
+}
+.navmain .widthcontainer .floatnav2 ul li a {
+  color: #ffffff;
+  margin: 0px 15px 0px 15px;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.navmain .widthcontainer .floatnav2 ul li a:hover {
+  color: #213162;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navmain .widthcontainer .floatnav2 ul li a {
+    display: block;
+    margin: 0px 20px;
+  }
+}
+
+/*nav end*/
+/*banner start*/
+.bannermain {
+  background: url(../images/slider-image.jpg) no-repeat 0 0/100% 100%;
+}
+.bannermain .bannerwidth {
+  width: 790px;
+  padding: 180px 0 180px 60px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth {
+    width: 100%;
+    padding: 45px 15px;
+    margin-left: 0px;
+  }
+}
+.bannermain .bannerwidth h1 {
+  text-transform: capitalize;
+  font-size: 70px;
+  line-height: 85px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth h1 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+}
+.bannermain .bannerwidth p {
+  padding: 40px 218px 50px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth p {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bannermain .bannerwidth .btn {
+    padding: 14px 20px;
+  }
+}
+
+/*banner end*/
+/*aboutus start*/
+.aboutusmain {
+  padding: 100px 0;
+}
+.aboutusmain .aboutusinner .floatmain .floatlft {
+  float: left;
+  width: 50%;
+}
+.aboutusmain .aboutusinner .floatmain .floatlft img {
+  width: 100%;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt {
+  float: left;
+  width: 50%;
+  padding: 0 0 0 80px;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .linemain {
+  text-align: left;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .heading {
+  text-transform: none;
+  line-height: 45px;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .heading span {
+  margin-bottom: 10px;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt p {
+  margin: 25px 0 40px;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .eye {
+  padding: 0 0 0 80px;
+  position: relative;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .eye span {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .eye span i {
+  font-size: 60px;
+  color: #02c18d;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .eye span i:hover {
+  color: #213162;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .eye h3 {
+  font-size: 25px;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .eye p {
+  margin: 15px 0 40px;
+}
+.aboutusmain .aboutusinner .floatmain .floatryt .btn {
+  padding: 15px 50px;
+}
+
+/*aboutus end*/
+/*ourservice start*/
+.ourservicemain {
+  padding-bottom: 60px;
+}
+.ourservicemain .ourserviceinner {
+  text-align: center;
+}
+.ourservicemain .ourserviceinner .para {
+  width: 840px;
+  margin: 0 auto;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner {
+  float: left;
+  width: 373px;
+  margin: 20px 13px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 6px 4px 40px #e9e8e8;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner img {
+  width: 100%;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner .move {
+  padding: 0 22px 0 30px;
+  position: relative;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner .move span {
+  padding: 15px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 10px #e9e8e8;
+  background-color: #ffffff;
+  position: absolute;
+  top: -20%;
+  left: 38%;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner .move span i {
+  font-size: 35px;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner .move h3 {
+  font-size: 24px;
+  text-transform: none;
+  padding: 40px 0 15px;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner .move .btn {
+  background: #ffffff;
+  color: #000000;
+  padding: 20px 0 30px;
+}
+.ourservicemain .ourserviceinner .floatmain .floatinner .move .btn:hover {
+  color: #02c18d;
+}
+
+/*ourservice end*/
+/*best start*/
+.bestmain {
+  background: url(../images/team-bg-1.jpg) no-repeat 0 0/100% 100%;
+  padding: 100px 0 480px;
+}
+.bestmain .bestinner {
+  position: relative;
+}
+.bestmain .bestinner .width {
+  width: 840px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bestmain .bestinner .width .heading {
+  color: #ffffff;
+  line-height: 45px;
+}
+.bestmain .bestinner .width .linemain {
+  margin: 5px 0;
+}
+.bestmain .bestinner .width .linemain .line {
+  width: 30px;
+  margin-left: -6px;
+}
+.bestmain .bestinner .width p {
+  color: #ffffff;
+}
+.bestmain .bestinner .floatmain {
+  position: absolute;
+  top: 123%;
+}
+.bestmain .bestinner .floatmain .floatinner {
+  float: left;
+  width: 373px;
+  margin: 20px 13px;
+}
+.bestmain .bestinner .floatmain .floatinner img {
+  width: 100%;
+}
+.bestmain .bestinner .floatmain .floatinner .move {
+  padding: 0 30px;
+  position: relative;
+  box-shadow: 0px 3px 3px #e9e8e8;
+}
+.bestmain .bestinner .floatmain .floatinner .move span {
+  position: absolute;
+  top: 4%;
+  right: 9%;
+  border: 5px solid #e6ebf8;
+  padding: 10px 12px;
+  border-radius: 100%;
+}
+.bestmain .bestinner .floatmain .floatinner .move h3 {
+  font-size: 24px;
+  padding-top: 10px;
+}
+.bestmain .bestinner .floatmain .floatinner .move .breye {
+  border-bottom: 3px solid #02c18d;
+}
+.bestmain .bestinner .floatmain .floatinner .move p {
+  padding: 10px 0;
+}
+
+/*best end*/
+/*appoinment start*/
+.appoinmentmain {
+  margin: 300px 0;
+}
+.appoinmentmain .appoinmentinner {
+  text-align: center;
+}
+.appoinmentmain .appoinmentinner h3 {
+  font-size: 25px;
+  line-height: 55px;
+}
+.appoinmentmain .appoinmentinner h3 span {
+  color: #02c18d;
+}
+.appoinmentmain .appoinmentinner .btn {
+  margin-top: 30px;
+}
+.appoinmentmain .appoinmentinner .floatmain {
+  margin: 100px 0;
+  box-shadow: 0px 2px 20px #e9e8e8;
+}
+.appoinmentmain .appoinmentinner .floatmain .floatlft {
+  float: left;
+  width: 50%;
+  padding: 30px 50px 0 67px;
+}
+.appoinmentmain .appoinmentinner .floatmain .floatlft h4 {
+  color: #02c18d;
+  font-size: 24px;
+  text-transform: none;
+}
+.appoinmentmain .appoinmentinner .floatmain .floatlft h5 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+.appoinmentmain .appoinmentinner .floatmain .floatryt {
+  float: left;
+  width: 50%;
+  padding: 5px 30px;
+}
+.appoinmentmain .appoinmentinner .floatmain .floatryt img {
+  width: 100%;
+}
+
+/*appoinment end*/
+/*improve start*/
+.improvemain {
+  padding: 100px 0;
+  background: linear-gradient(rgba(30, 62, 119, 0.84), rgba(4, 6, 104, 0.66)), url(../images/video-bg.jpg) no-repeat 0 0/100% 100%;
+}
+.improvemain .improveinner {
+  width: 830px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+.improvemain .improveinner .heading {
+  color: #ffffff;
+}
+.improvemain .improveinner p {
+  padding: 30px 0;
+}
+.improvemain .improveinner span {
+  padding: 23px 25px;
+  border-radius: 100%;
+  background-color: #02c18d;
+  display: inline-block;
+  margin: 30px 0 50px;
+}
+.improvemain .improveinner span i {
+  color: #ffffff;
+  font-size: 30px;
+}
+.improvemain .improveinner span:hover i {
+  color: #213162;
+}
+.improvemain .improveinner .btn {
+  background-color: #02c18d;
+}
+.improvemain .improveinner .btn:hover {
+  color: #213162;
+}
+
+/*improve end*/
+/*company start*/
+.companymain {
+  padding: 100px 0;
+}
+.companymain .companyinner .floatmain .floatlft {
+  width: 50%;
+  float: left;
+  padding-right: 80px;
+}
+.companymain .companyinner .floatmain .floatlft img {
+  width: 100%;
+}
+.companymain .companyinner .floatmain .floatryt {
+  width: 50%;
+  float: left;
+  padding: 0 25px;
+}
+.companymain .companyinner .floatmain .floatryt .linemain {
+  text-align: left;
+}
+.companymain .companyinner .floatmain .floatryt .heading {
+  line-height: 45px;
+}
+.companymain .companyinner .floatmain .floatryt .heading span {
+  margin-bottom: 10px;
+}
+.companymain .companyinner .floatmain .floatryt p {
+  padding: 15px 0 30px;
+  border-bottom: 2px solid #c9bdb1;
+}
+
+/*company end*//*# sourceMappingURL=style.css.map */
