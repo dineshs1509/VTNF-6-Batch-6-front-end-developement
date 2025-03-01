@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+}
+
+/*root start*/
+/*root end*/
+/*common start*/
+a {
+  text-decoration: none;
+}
+
+.fclear {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #4f4449;
+}
+
+.widthcontainer {
+  width: 1290px;
+  margin: 0 auto;
+}
+
+.fclear {
+  clear: both;
+}
+
+.bordergradient {
+  width: 80px; /* Adjust as needed */
+  height: 3px; /* Adjust thickness */
+  background: linear-gradient(90deg, #00c2ff, #4caf50);
+  border-radius: 2px; /* Smooth edges */
+  margin-bottom: 70px;
+}
+
+/*common end*/
+/*hnav start*/
+.hnavmain {
+  padding: 17px 0 0;
+}
+.hnavmain .floatnav {
+  float: left;
+  width: 50%;
+}
+.hnavmain .floatnav h2 a {
+  color: #4f4449;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.hnavmain .floatnav h2 a:hover {
+  background: linear-gradient(90deg, #00c2ff, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hnavmain .floatnav h2 a span {
+  background: linear-gradient(90deg, #00c2ff, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hnavmain .floatnav2 {
+  float: right;
+}
+.hnavmain .floatnav2 a {
+  display: inline-block;
+  background-color: #69d7b2;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin: 10px 0;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  transition: 1s;
+}
+.hnavmain .floatnav2 a:hover {
+  color: #69d7b2;
+  background: #4f4449;
+  transition: 1s;
+}
+
+/*hnav end*/
+/*nav start*/
+.navmain .navmenu a {
+  color: #4f4449;
+  text-decoration: none;
+  padding: 10px 48px 17px 15px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Times New Roman";
+}
+.navmain .navmenu a:hover {
+  color: #69d7b2;
+}
+
+/*nav end*/
+/*banner start*/
+.bannermain {
+  background: url(../images/slider-1.jpg) no-repeat 164% 0/93%;
+}
+.bannermain .bannerinner {
+  width: 715px;
+  padding: 205px 85px;
+}
+.bannermain .bannerinner h1 {
+  font-size: 61px;
+  margin-bottom: 30px;
+  line-height: 56px;
+}
+.bannermain .bannerinner p {
+  font-size: 32px;
+  color: #4f4449;
+}
+
+/*banner end*/
+/*planning start*/
+.planningmain {
+  background-color: #f3f3f3;
+  padding: 40px 30px 80px 20px;
+}
+.planningmain .planninginner {
+  margin-bottom: 30px;
+}
+.planningmain .planninginner .planfloat {
+  float: left;
+  width: 365px;
+  margin: 25px 90px 60px 0;
+}
+.planningmain .planninginner .planfloat .brimg img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+.planningmain .planninginner .planfloat h3 {
+  font-size: 22px;
+  padding: 10px 0 20px;
+}
+.planningmain .planninginner .planfloat P {
+  color: #aba9a9;
+  font-size: 13px;
+  text-align: justify;
+}
+.planningmain .planninginner .mzero {
+  margin-right: 10px;
+}
+.planningmain .planningimg .planimgfloat {
+  float: left;
+  width: 283px;
+  margin: 0 50px 0 0;
+  text-align: center;
+}
+.planningmain .planningimg .planimgfloat .pimg1, .planningmain .planningimg .planimgfloat .pimg2, .planningmain .planningimg .planimgfloat .pimg3, .planningmain .planningimg .planimgfloat .pimg4 {
+  background: url(../images/img-1.png) no-repeat 0px 0px/cover;
+  height: 420px;
+}
+.planningmain .planningimg .planimgfloat .pimg1 .content, .planningmain .planningimg .planimgfloat .pimg2 .content, .planningmain .planningimg .planimgfloat .pimg3 .content, .planningmain .planningimg .planimgfloat .pimg4 .content {
+  padding-top: 330px;
+}
+.planningmain .planningimg .planimgfloat .pimg1 .content h5, .planningmain .planningimg .planimgfloat .pimg2 .content h5, .planningmain .planningimg .planimgfloat .pimg3 .content h5, .planningmain .planningimg .planimgfloat .pimg4 .content h5 {
+  font-size: 25px;
+  margin: 15px 0;
+  font-weight: normal;
+}
+.planningmain .planningimg .planimgfloat .pimg1 .content p, .planningmain .planningimg .planimgfloat .pimg2 .content p, .planningmain .planningimg .planimgfloat .pimg3 .content p, .planningmain .planningimg .planimgfloat .pimg4 .content p {
+  font-size: 14px;
+  background: linear-gradient(90deg, #00c2ff, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.planningmain .planningimg .planimgfloat .pimg2 {
+  background: url(../images/img-2.png) no-repeat 0px 0px/cover;
+}
+.planningmain .planningimg .planimgfloat .pimg3 {
+  background: url(../images/img-3.png) no-repeat 0px 0px/cover;
+}
+.planningmain .planningimg .planimgfloat .pimg4 {
+  background: url(../images/img-4.png) no-repeat 0px 0px/cover;
+}
+.planningmain .planningimg .mzero {
+  margin-right: 0;
+}
+
+/*planning end*/
+/*backpic start*/
+.backpicmain {
+  background: url(../images/index-2-gradient.jpg) no-repeat 0px 0px/cover;
+}
+.backpicmain .backpicinner {
+  text-align: center;
+  padding: 60px 0 70px 0;
+}
+.backpicmain .backpicinner span {
+  width: 100px;
+  display: inline-block;
+  border: 1px solid white;
+}
+.backpicmain .backpicinner h2 {
+  color: white;
+  margin: 60px 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.backpicmain .backpicinner a {
+  padding: 10px 20px;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 30px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+.backpicmain .backpicinner a:hover {
+  color: #4f4449;
+}
+
+/*backpic end*/
+/*ourclient start*/
+.ourclientmain .ourclientinner {
+  text-align: center;
+  padding: 65px 0 35px 0;
+}
+.ourclientmain .ourclientinner .bordergradient {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.ourclientmain .ourclientinner h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+.ourclientmain .ourclientinner .clientfloat {
+  float: left;
+  width: 375px;
+  text-align: left;
+  margin: 55px 80px 20px 0;
+}
+.ourclientmain .ourclientinner .clientfloat .brimg img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+}
+.ourclientmain .ourclientinner .clientfloat p {
+  padding: 20px 0;
+  font-size: 13px;
+  color: #aba9a9;
+  text-align: justify;
+}
+.ourclientmain .ourclientinner .mzero {
+  margin-right: 0;
+}
+
+/*ourclient end*/
+/*footer start*/
+.footermain {
+  background-color: #292929;
+  padding: 50px 0 70px 0;
+}
+.footermain .footerinner .foot1float {
+  float: left;
+  width: 300px;
+  margin: 5px 65px 0 0;
+}
+.footermain .footerinner .foot1float h2 a {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.footermain .footerinner .foot1float h2 a:hover {
+  background: linear-gradient(90deg, #00c2ff, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footermain .footerinner .foot1float h2 a span {
+  background: linear-gradient(90deg, #00c2ff, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footermain .footerinner .foot1float p {
+  font-size: 13px;
+  color: #5f676b;
+  line-height: 25px;
+  margin: 20px 0px 50px 0;
+}
+.footermain .footerinner .foot1float .ftimg a {
+  margin-right: 30px;
+}
+.footermain .footerinner .foot2float {
+  float: left;
+  width: 287px;
+}
+.footermain .footerinner .foot2float p {
+  color: #f3f3f3;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.footermain .footerinner .foot2float ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+.footermain .footerinner .foot2float ul li:hover a {
+  color: #f3f3f3;
+}
+.footermain .footerinner .foot2float ul li a {
+  color: #69d7b2;
+  font-size: 13px;
+  transition: 1s;
+}
+.footermain .footerinner .foot2float .footp3 li {
+  padding: 5px 0;
+}
+.footermain .footerinner .foot2float .footp3 a {
+  color: #5640b4;
+  line-height: 26px;
+}
+.footermain .footerinner .foot4float {
+  float: left;
+  width: 263px;
+  margin-left: 87px;
+}
+.footermain .footerinner .foot4float p {
+  color: #f3f3f3;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.footermain .footerinner .foot4float ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+.footermain .footerinner .foot4float ul li:hover a {
+  color: #f3f3f3;
+}
+.footermain .footerinner .foot4float ul li a {
+  color: #5f676b;
+  font-size: 13px;
+  transition: 1s;
+}
+.footermain .footerinner .foot4float ul li a img {
+  margin: -5px 10px 0 0;
+  display: inline-block;
+}
+
+/*footer end*//*# sourceMappingURL=style.css.map */
